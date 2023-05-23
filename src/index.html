@@ -12,6 +12,10 @@
             background-color: #222831;
             color: #EEEEEE;
         }
+
+        .bg {
+            background-image: url("./assets/bg.svg");
+        }
     </style>
 </head>
 
@@ -35,11 +39,11 @@
             <div>
                 <h1 class="text-7xl font-bold uppercase">
                     Creative UI
-                    <span class="text-[#00ADB5]">designer</span>
+                    <span class="text-primary">designer</span>
                 </h1>
                 <section class="mt-8 flex gap-5">
-                    <button class="bg-[#00ADB5] px-6 py-2 rounded-full font-bold">Hire Me</button>
-                    <button class="bg-[#393E46BF] px-6 py-2 rounded-full font-bold flex gap-2 items-center">
+                    <button class="bg-primary btn">Hire Me</button>
+                    <button class="bg-secondary btn flex gap-2 items-center">
                         <span> Download CV</span>
                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -60,7 +64,7 @@
     </section>
 
     <div class="grid place-items-center">
-        <div class="bg-[#393E46BF] p-4">
+        <div class="bg-secondary p-4">
             <svg width="23" height="38" viewBox="0 0 23 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11.5 1L11.5 37" stroke="#EEEEEE" stroke-opacity="0.75" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" />
@@ -69,6 +73,113 @@
             </svg>
         </div>
     </div>
+
+    <!-- About Me -->
+    <section class="container mx-auto grid grid-cols-2 mt-32 items-center">
+        <div>
+            <h2 class="text-6xl font-bold mb-4">About <span class="text-primary">Me</span></h2>
+            <p class="max-w-[75%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et
+                velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia
+                nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.</p>
+        </div>
+        <img src="./assets/aboutme.png" alt="">
+    </section>
+
+
+
+    <!-- My Recent Work -->
+    <div class="bg">
+        <div class="container mx-auto mt-32 py-36">
+            <h1 class="text-6xl font-bold mb-6">My recent <span class="text-primary">works</span></h1>
+            <div class="flex gap-5 mb-4">
+                <button class="btn bg-primary">All</button>
+                <button class="btn bg-secondary">UI</button>
+                <button class="btn bg-secondary">UX</button>
+                <button class="btn bg-secondary">Web Design</button>
+            </div>
+            <div class="grid grid-cols-3 gap-5">
+                <img src="https://random.imagecdn.app/250/150" alt="" class="rounded-xl">
+                <img src="https://random.imagecdn.app/250/150" alt="" class="rounded-xl">
+                <img src="https://random.imagecdn.app/250/150" alt="" class="rounded-xl">
+            </div>
+        </div>
+    </div>
+
+
+    <section class="container mx-auto grid grid-cols-2 my-32">
+        <div>
+            <h2 class="text-6xl font-bold">Got a project in
+                <span class="text-primary">mind?</span>
+            </h2>
+            <img src="./assets/contactme.png" alt="">
+        </div>
+        <div>
+            <div class="grid grid-cols-2 gap-5 mb-4">
+                <div>
+                    <label class="font-semibold"> Your Name</label>
+                    <input type="text" class="block bg-secondary px-4 py-2 rounded-xl w-full" placeholder="Name">
+                </div>
+                <div>
+                    <label class="font-semibold"> Your Email</label>
+                    <input type="text" class="block bg-secondary px-4 py-2 rounded-xl w-full" placeholder="Email">
+                </div>
+
+            </div>
+            <div class="mb-6">
+                <label class="font-semibold"> Your Message</label>
+                <textarea class="block bg-secondary px-4 py-2 rounded-xl w-full" rows="10"
+                    placeholder="Message"></textarea>
+            </div>
+            <button class="btn bg-primary flex gap-2 items-center">
+                <p>Send Message</p>
+                <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 1.5L14 21.5L10 12.5L1 8.5L21 1.5Z" stroke="#EEEEEE" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="container mx-auto">
+        <div class="grid place-content-center py-20">
+            <ul class="flex gap-8">
+                <li class="flex gap-2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z"
+                            stroke="#EEEEEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9 22V12H15V22" stroke="#EEEEEE" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <p>Home</p>
+                </li>
+                <li class="flex gap-2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z"
+                            stroke="#EEEEEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9 22V12H15V22" stroke="#EEEEEE" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <p>Home</p>
+                </li>
+                <li class="flex gap-2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z"
+                            stroke="#EEEEEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9 22V12H15V22" stroke="#EEEEEE" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <p>Home</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="grid place-content-end pb-10">Terms of Service - Privacy Policy</div>
+    </footer>
 </body>
 
 </html>
